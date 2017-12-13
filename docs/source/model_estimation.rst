@@ -38,7 +38,7 @@ After selecting the parameters we intialize and run the cross validation grid se
     from sklearn.model_selection import GridSearchCV
 
     parameters = {'k': range(1,3), 's': [0.5, 0.7, 1.0]}
-    score = 'f1-macro
+    score = 'f1-macro'
 
     clf = GridSearchCV(MLkNN(), parameters, scoring=score)
     clf.fit(x, y)
